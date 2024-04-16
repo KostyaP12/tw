@@ -4,7 +4,7 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
-    'id' => 'basic',
+    'id' => 'ip-location-service',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -50,6 +50,9 @@ $config = [
             ],
         ],
         */
+    ],
+    'controllerMap' => [
+        'ip-location' => 'app\controllers\IpLocationController',
     ],
     'params' => $params,
 ];
